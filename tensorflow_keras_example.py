@@ -8,7 +8,7 @@ from tensorflow import keras
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Import the Fashion MNIST dataset. Fashion MNIST is intended as a drop-in replacement for the classic MNIST dataset—often used as the "Hello, World" of machine learning programs for computer vision.
+# Import the Fashion MNIST dataset. Fashion MNIST is intended as a drop-in replacement for the classic MNIST datasetâ€”often used as the "Hello, World" of machine learning programs for computer vision.
 
 fashion_mnist = keras.datasets.fashion_mnist
 
