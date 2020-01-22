@@ -26,14 +26,16 @@ def get_tweets(username):
   
         # create array of tweet information: username,  
         # tweet id, date/time, text 
-        tweets_for_csv = [tweet.text for tweet in tweets] # CSV file created  
+        tweets_for_csv = [tweet.text for tweet in tweets]
         for j in tweets_for_csv: 
   
             # Appending tweets to the empty array tmp 
             tmp.append(j)  
   
         # Printing the tweets 
-        print(tmp) 
+        print(tmp)
+        
+        return tweets_for_csv
   
   
 # Driver code 
@@ -41,4 +43,4 @@ if __name__ == '__main__':
   
     # Here goes the twitter handle for the user 
     # whose tweets are to be extracted. 
-    get_tweets("twitter-handle")
+    tweets_for_csv = get_tweets("twitter-handle")
